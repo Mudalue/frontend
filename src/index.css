@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+nav {
+  padding: 5px 45px;
+  border-bottom: 1px solid lightgrey
+}
+
+.navBtnTxt {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.small-text {
+  font-size: 13px;
+  font-weight: 300;
+}
+.big-text{
+  font-size: 15px;
+  font-weight: 600;
+}
+.herosubheader{
+  font-size: 48px;
+  font-weight: 600;
+  color: #EC5E2A
+}
+.heroheader{
+  font-size: 64px;
+  font-weight: 700;
+  color: #67696E
+}
+.herotxt{
+  font-size: 20px;
+  font-weight: 600;
+  color: #67696E
+}
+
+/* card */
+.gallery-card {
+  background-color: #1e3c72;
+  position: relative;
+  color: #f1f1f1;
+  border: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 30%;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.gallery-card:hover .overlay {
+  opacity: 0.8;
+}
+/* carousel.css */
+
+.carousel {
+  /* position: relative; */
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Updated transition property */
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+}
+
+.carousel-controls {
+  /* position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  transform: translateY(-50%);
+}
+
+.carousel-controls button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicator.active {
+  background-color: #333;
+}
+.carouselbtn{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  background-color: #67696E;
+}
+.img{
+  height: 350px;
+  width: 25%;
+}
+.btn{
+  box-shadow: none!important;
+}
